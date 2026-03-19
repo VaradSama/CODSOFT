@@ -1,25 +1,67 @@
-# 🤖 CodSoft AI Internship
+# Tic-Tac-Toe AI — Minimax Algorithm with Alpha-Beta Pruning
 
-**Name:** Varad Abhijeet Gadekar  
-**Organization:** CodSoft  
-**Track:** Artificial Intelligence  
-**Batch:** March 2026 – April 2026  
-
----
-
-## 📋 Tasks
-
-| Task | Title | Tech | Status |
-|------|-------|------|--------|
-| Task 1 | Rule-Based Chatbot | Python | ✅ Done |
-| Task 2 | Tic-Tac-Toe AI (Minimax) | Python, HTML, CSS, JS | ✅ Done |
-| Task 3 | Image Captioning | Python | ✅ Done |
-| Task 4 | Recommendation System | Python | ✅ Done |
-| Task 5 | Face Detection & Recognition | Python | ✅ Done |
+**Developer:** Varad | MCA – Cybersecurity | IIMS Chinchwad, Pune  
+**Language:** Python 3.x + HTML/CSS/JavaScript  
+**Algorithm:** Minimax with Alpha-Beta Pruning
 
 ---
 
+## Project Structure
 
-## 🔗 Connect
-- LinkedIn: [Varad Gadekar](https://www.linkedin.com/in/varad-gadekar/)
-- GitHub: [VaradSama](https://github.com/VaradSama)
+```
+tictactoe/
+├── tictactoe.py          # Python CLI game (Minimax AI)
+├── test_tictactoe.py     # 14 unit tests
+├── index.html            # Web-based GUI 
+└── README.md             # This file
+```
+
+---
+
+## Quick Start
+
+### Python CLI Version
+```bash
+python tictactoe.py
+```
+
+### Run Tests
+```bash
+python test_tictactoe.py
+```
+
+### Web Version
+Open `index.html` in any modern browser — no server needed.
+
+---
+
+## How It Works
+
+1. The AI uses **Minimax** — a recursive algorithm that explores all possible future moves.
+2. **Alpha-Beta pruning** eliminates branches that cannot affect the outcome, reducing evaluations by ~50%.
+3. Three difficulty levels: **Easy** (random), **Medium** (depth-3 Minimax), **Hard** (full Minimax — unbeatable).
+
+---
+
+## Scoring
+| Outcome | Score |
+|---------|-------|
+| AI wins | +1    |
+| Human wins | -1 |
+| Draw | 0     |
+
+---
+
+## Key Functions
+
+| Function | Purpose |
+|----------|---------|
+| `minimax()` | Core recursive AI logic with Alpha-Beta pruning |
+| `get_ai_move()` | Selects best move based on difficulty |
+| `check_winner()` | Detects all 8 winning combinations |
+| `evaluate()` | Returns terminal state score |
+| `get_human_move()` | Validates and reads player input |
+
+---
+
+
